@@ -1,0 +1,85 @@
+/************************************************************************/ /* Start Style All */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Segoe UI;
+  user-select: none;
+}
+/************************************************************************/ /* End Style All */
+
+/************************************************************************/ /* Start Style RadioInput */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+}
+
+.section_radio_input {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  color: #796b59;
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+.section_inner_radio_input {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 2px solid #796b59;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #999;
+}
+
+.section_inner_radio_input i {
+  position: relative;
+  opacity: 0;
+  transition: all 1s;
+  top: -4px;
+}
+
+.section_inner_radio_input i:hover {
+  opacity: 1;
+}
+
+.icon_send {
+  position: absolute;
+  color: skyblue;
+  font-size: 70px;
+  bottom: -180px;
+  left: -180px;
+  opacity: 0;
+}
+
+@keyframes RunIconSend {
+  0% {
+    opacity: 0;
+    bottom: -180px;
+    left: -180px;
+    font-size: 70px;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 54px;
+    left: 49px;
+    font-size: 10px;
+  }
+}
+/************************************************************************/ /* End Style RadioInput */
